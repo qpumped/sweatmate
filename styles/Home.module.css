@@ -1,10 +1,20 @@
+/*
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+}
+
+.footer {
+  position: fixed;
+  background-color: gray;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  text-align: center;
 }
 
 .description {
@@ -129,6 +139,7 @@
   position: absolute;
   z-index: -1;
 }
+*/
 
 /* Conic Gradient Animation */
 .thirteen::before {
