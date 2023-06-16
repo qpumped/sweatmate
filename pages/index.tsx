@@ -1,15 +1,6 @@
 import Head from 'next/head'
-import { Heebo } from 'next/font/google'
 import Navigation from "@/pages/navigation/navigation_home";
-import {userData} from "@/pages/user/variables";
 import React from "react";
-
-/*
-* ToDo
-*  Picture has to be full screen width
-*/
-{/*Font*/}
-const heebo = Heebo({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -31,7 +22,7 @@ export default function Home() {
           {/*div container for the 3 different cards*/}
           <div className="cards-container">
               {/*div for the card*/}
-              <div className="card">
+              <div className="card-main">
                   <img className="card-icon" src={"/card-login-icon.svg"} alt={"Discover"}/>
                   <h2 className="card-title">Login</h2>
                   <p className="card-text">
@@ -39,7 +30,7 @@ export default function Home() {
                   </p>
               </div>
               {/*div for the card*/}
-              <div className="card">
+              <div className="card-main">
                   <img className="card-icon" src={"/card-discover-icon.svg"} alt={"Discover"}/>
                   <h2 className="card-title">Discover</h2>
                   <p className="card-text">
@@ -47,7 +38,7 @@ export default function Home() {
                   </p>
               </div>
               {/*div for the card*/}
-              <div className="card">
+              <div className="card-main">
                   <img className="card-icon" src={"/card-likeordislike-icon.svg"} alt={"Discover"}/>
                   <h2 className="card-title">Like or Dislike</h2>
                   <p className="card-text">

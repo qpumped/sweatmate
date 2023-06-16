@@ -1,12 +1,8 @@
 import Head from 'next/head'
-import { Heebo } from 'next/font/google'
 import Navigation from "@/pages/navigation/navigation_discover";
 import React, {useState} from "react";
 import Exercise from "@/pages/trainingsplan/exercise-input"
 import {addTrainingsplan} from "@/pages/user/variables";
-
-{/*Font*/}
-const heebo = Heebo({ subsets: ['latin'] })
 
 export default function Home() {
     const [exerciseCount, setExerciseCount] = useState(1);
@@ -30,7 +26,7 @@ export default function Home() {
                     </div>
 
                     <div className={"back-button-div"}>
-                        <a className={"back-button"}>Go Back</a>
+                        <a className={"back-button"} href={"/discover"}>Go Back</a>
                     </div>
 
                     <div style={{marginTop: "25px"}}>

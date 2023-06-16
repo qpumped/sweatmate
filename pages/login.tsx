@@ -1,11 +1,7 @@
 import Head from 'next/head'
-import { Heebo } from 'next/font/google'
 import Navigation from "@/pages/navigation/navigation_login";
-import React, {useEffect, useState} from "react";
-import {userData, login} from "@/pages/user/variables";
-
-{/*Font*/}
-const heebo = Heebo({ subsets: ['latin'] });
+import React, {useState} from "react";
+import {login} from "@/pages/user/variables";
 
 export default function Home() {
     const [username, setUserName] = useState<string>("");
@@ -34,14 +30,14 @@ export default function Home() {
                     <div className="wrapper">
                         <form onSubmit={()  => login(username, password)}>
                             <div className="group">
-                                <input type="text" required
+                                <input type="text"
                                        onChange={e => setUserName(e.target.value)}/>
                                 <span className="highlight"/>
                                 <span className="bar"/>
                                 <label>Username</label>
                             </div>
                             <div className="group">
-                                <input type="password" required
+                                <input type="password"
                                        onChange={e => setPassword(e.target.value)}/>
                                 <span className="highlight"/>
                                 <span className="bar"/>

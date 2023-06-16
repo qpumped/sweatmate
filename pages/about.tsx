@@ -1,13 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Heebo } from 'next/font/google'
 import Navigation from "@/pages/navigation/navigation_about";
-import styles from '@/styles/Home.module.css'
-import {width} from "dom-helpers";
 import React from "react";
-
-{/*Font*/}
-const heebo = Heebo({ subsets: ['latin'] })
 
 export default function Home() {
     return (
@@ -23,6 +16,7 @@ export default function Home() {
                 {/*Navigation -> refers to navigation_about.tsx*/}
                 <Navigation/>
 
+                
             </main>
         </>
     )

@@ -1,12 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Heebo } from 'next/font/google'
 import Navigation from "@/pages/navigation/navigation_login";
 import {userData, logout} from "@/pages/user/variables";
-import React, { useState, useEffect } from 'react';
-
-{/*Font*/}
-const heebo = Heebo({ subsets: ['latin'] })
 
 export default function Home(){
     return (
@@ -26,15 +20,15 @@ export default function Home(){
                     <div className="div-container-top">
                         <div className="flex-container">
                             <div>
-                                <img src="/account-icon.svg" className="account-picture"/>
+                                <img src="/account-icon.svg" className="account-picture" alt={"icon"}/>
                             </div>
                             <div>
                                 <h2>{userData.username}</h2>
                                 <div className="likes-container">
-                                    <img src="/like-icon.svg"/>
-                                    <p>100</p>
-                                    <img src="/dislike-icon.svg"/>
-                                    <p>50</p>
+                                    <img src="/like-icon.svg" alt={"icon"}/>
+                                    <p>189</p>
+                                    <img src="/dislike-icon.svg" alt={"icon"}/>
+                                    <p>17</p>
                                 </div>
                             </div>
                             <div className={"log-out-button"}>

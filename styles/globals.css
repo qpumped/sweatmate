@@ -203,7 +203,7 @@ a {
   flex-wrap: wrap;
 }
 
-.card {
+.card-main {
   width: calc(33.33% - 20px);
   padding: 30px 60px 60px;
   text-align: center;
@@ -337,7 +337,6 @@ h4 {
   content: "";
   height: 2px;
   width: 0;
-  bottom: 0px;
   position: absolute;
   background: #2196f3;
   transition: 300ms ease all;
@@ -785,4 +784,118 @@ h4 {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  margin-left: 50px;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.card-upper {
+  height: 50%;
+}
+
+.card-lower {
+  height: 50%;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.subtitle {
+  color: #657885;
+  font-size: 14px;
+}
+
+.card-link {
+  color: #1478F8;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.card-lower-part {
+  position: relative;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.card-likes-container {
+  float: right;
+  margin-right: 15px;
+  margin-top: -15px;
+}
+
+.card-likes-container a {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details-div-top {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin-top: 60px;
+  background-image: url("../public/details-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.discover-container {
+  position: relative;
+  margin-left: 50px;
+}
+
+.details-div-top .discover-container h2 {
+  font-size: 40px;
+}
+
+.details-div-top .discover-container h4 {
+  color: #657885;
+}
+
+.exercise-output-top {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-right: 50px;
+}
+
+.exercise-output-picture {
+  flex: 0 0 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-size: contain;
+  background: url("../public/exercise-default.svg") no-repeat center;
+}
+
+.exercise-output {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.exercise-output h2 {
+  margin-top: 0;
+}
+
+.exercise-description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  color: #657885;
+}
+
+.exercise-description h5{
+  margin-top: 10px;
 }

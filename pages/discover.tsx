@@ -1,13 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Heebo } from 'next/font/google'
 import Navigation from "@/pages/navigation/navigation_discover";
-import styles from '@/styles/Home.module.css'
-import {width} from "dom-helpers";
 import React from "react";
-
-{/*Font*/}
-const heebo = Heebo({ subsets: ['latin'] })
+import Card from "@/pages/trainingsplan/trainingsplan-card";
 
 export default function Home() {
     return (
@@ -30,6 +24,17 @@ export default function Home() {
                         </a>
                         <input className={"search-bar"} type={"search"} placeholder={"Search..."}/>
                     </div>
+                </div>
+
+
+                <div className={"card-grid"}>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
                 </div>
             </main>
         </>
